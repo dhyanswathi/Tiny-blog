@@ -16,8 +16,23 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hey there! Here is our {postData.length} posts!</h1>
-      
+      <h1>Hey there! Here is our posts!</h1>
+      <section className='posts-section'>
+        <h2>Love</h2>
+        <ul className="posts-love">
+            {
+              postData.filter(post => post.tags.includes("love"))
+              .map(post => 
+                <li key={post.postId} className="posts-list">
+                  <article className='posts-article'>
+                    <h3>{post.title}</h3>
+                    <p>{post.body}</p>
+                    <footer>{post.tags.map(tag => <span>{tag + " "} </span>)}</footer>
+                  </article>
+                </li>)
+            }
+        </ul>
+      </section>
     </div>
   );
 }
