@@ -21,7 +21,7 @@ function App() {
         <h2>Love</h2>
         <ul className="posts-love">
             {
-              postData.filter(post => post.tags.includes("love"))
+              postData.filter(post => post.tags.includes("love")).slice(0, 5)
               .map(post => 
                 <li key={post.postId} className="posts-list">
                   <article className='posts-article'>
