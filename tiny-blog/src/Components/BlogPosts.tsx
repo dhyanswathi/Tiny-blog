@@ -7,7 +7,6 @@ interface IPostComponentProps {
 
 function BlogPosts({postData} : IPostComponentProps) {
 
-  
     return (
       <>
         <h1>Hey there! Here is our posts!</h1>

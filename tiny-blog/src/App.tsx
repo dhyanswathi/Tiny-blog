@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import BlogPosts from './Components/BlogPosts';
+import Header from './Components/Header';
 import { PostInfo } from './types';
 
 function App() {
+  
   const [postData, setPostData] = useState<PostInfo[]>([]);
 
   useEffect(() => {
@@ -17,6 +19,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header></Header>
       <BlogPosts postData={postData}></BlogPosts>
     </div>
   );
