@@ -1,13 +1,26 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "./Header.css";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import {LinkContainer} from 'react-router-bootstrap';
 
-function Header() {
+const Header = () => {
     return (
-        <section className="topnav">
-            <Link to="/" className="nav-left">Home</Link>
-            <Link to="/about" className="nav-right">About</Link>
-        </section>
+    <Navbar bg="dark" variant="dark">
+     <Container>
+        <LinkContainer to="/">
+            <Navbar.Brand>Keep Scribbling</Navbar.Brand>
+        </LinkContainer>
+      <Nav className="me-auto">
+      <LinkContainer to="/">
+        <Nav.Link href="#home">Home</Nav.Link>
+      </LinkContainer>
+      <LinkContainer to="/about">
+        <Nav.Link href="#about">About</Nav.Link>
+      </LinkContainer>
+      </Nav>
+     </Container>
+    </Navbar>
     )
 }
 
