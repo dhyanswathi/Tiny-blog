@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Badge from 'react-bootstrap/Badge';
+import Accordion from 'react-bootstrap/Accordion';
 
 interface IPostComponentProps {
     postData : PostInfo[]
@@ -13,15 +14,17 @@ interface IPostComponentProps {
 function BlogPosts({postData} : IPostComponentProps) {
 
     return (
-      <>
+      <><Accordion>
         <Container>
         <section className='posts-section'>
-          <h2>Love</h2>
+        <Accordion.Item eventKey="0">
+        <Accordion.Header>Love</Accordion.Header>
+        <Accordion.Body>
           <Row>
               {
                 postData.filter(post => post.tags.includes("love")).slice(0, 5)
                 .map(post => <Col>
-                  <Card style={{ width: '18rem' }} className='card'>
+                  <Card style={{ width: '20rem' }} className='card'>
                   <Card.Body>
                       <Card.Title>{post.title}</Card.Title>
                       <Card.Text>{post.body}</Card.Text>
@@ -29,76 +32,89 @@ function BlogPosts({postData} : IPostComponentProps) {
                       </Card.Body></Card>
                   </Col>)
               }
-          </Row>
+          </Row></Accordion.Body></Accordion.Item>
         </section></Container>
-  
+
+        <Container>
         <section className='posts-section'>
-          <h2>Mystery</h2>
-          <ul className="posts">
+        <Accordion.Item eventKey="1">
+        <Accordion.Header>Mystery</Accordion.Header>
+        <Accordion.Body>
+          <Row>
               {
                 postData.filter(post => post.tags.includes("mystery")).slice(0, 5)
-                .map(post => 
-                  <li key={post.postId} className="posts-list">
-                    <article className='posts-article'>
-                      <h3>{post.title}</h3>
-                      <p>{post.body}</p>
-                      <footer className="tags">{post.tags.map(tag => <span>{tag + " "} </span>)}</footer>
-                    </article>
-                  </li>)
+                .map(post => <Col>
+                  <Card style={{ width: '20rem' }} className='card'>
+                  <Card.Body>
+                      <Card.Title>{post.title}</Card.Title>
+                      <Card.Text>{post.body}</Card.Text>
+                      {post.tags.map(tag =><Badge bg="secondary">{tag}</Badge>)}
+                      </Card.Body></Card>
+                  </Col>)
               }
-          </ul>
-        </section>
-  
+          </Row></Accordion.Body></Accordion.Item>
+        </section></Container>
+
+        <Container>
         <section className='posts-section'>
-          <h2>Fiction</h2>
-          <ul className="posts">
+        <Accordion.Item eventKey="2">
+        <Accordion.Header>Fiction</Accordion.Header>
+        <Accordion.Body>
+          <Row>
               {
                 postData.filter(post => post.tags.includes("fiction")).slice(0, 5)
-                .map(post => 
-                  <li key={post.postId} className="posts-list">
-                    <article className='posts-article'>
-                      <h3>{post.title}</h3>
-                      <p>{post.body}</p>
-                      <footer className="tags">{post.tags.map(tag => <span>{tag + " "} </span>)}</footer>
-                    </article>
-                  </li>)
+                .map(post => <Col>
+                  <Card style={{ width: '20rem' }} className='card'>
+                  <Card.Body>
+                      <Card.Title>{post.title}</Card.Title>
+                      <Card.Text>{post.body}</Card.Text>
+                      {post.tags.map(tag =><Badge bg="secondary">{tag}</Badge>)}
+                      </Card.Body></Card>
+                  </Col>)
               }
-          </ul>
-        </section>
-  
+          </Row></Accordion.Body></Accordion.Item>
+        </section></Container>
+
+        <Container>
         <section className='posts-section'>
-          <h2>Classic</h2>
-          <ul className="posts">
+        <Accordion.Item eventKey="0">
+        <Accordion.Header>Classic</Accordion.Header>
+        <Accordion.Body>
+          <Row>
               {
                 postData.filter(post => post.tags.includes("classic")).slice(0, 5)
-                .map(post => 
-                  <li key={post.postId} className="posts-list">
-                    <article className='posts-article'>
-                      <h3>{post.title}</h3>
-                      <p>{post.body}</p>
-                      <footer className="tags">{post.tags.map(tag => <span>{tag + " "} </span>)}</footer>
-                    </article>
-                  </li>)
+                .map(post => <Col>
+                  <Card style={{ width: '20rem' }} className='card'>
+                  <Card.Body>
+                      <Card.Title>{post.title}</Card.Title>
+                      <Card.Text>{post.body}</Card.Text>
+                      {post.tags.map(tag =><Badge bg="secondary">{tag}</Badge>)}
+                      </Card.Body></Card>
+                  </Col>)
               }
-          </ul>
-        </section>
-  
+          </Row></Accordion.Body></Accordion.Item>
+        </section></Container>
+
+        <Container>
         <section className='posts-section'>
-          <h2>History</h2>
-          <ul className="posts">
+        <Accordion.Item eventKey="0">
+        <Accordion.Header>History</Accordion.Header>
+        <Accordion.Body>
+          <Row>
               {
                 postData.filter(post => post.tags.includes("history")).slice(0, 5)
-                .map(post => 
-                  <li key={post.postId} className="posts-list">
-                    <article className='posts-article'>
-                      <h3>{post.title}</h3>
-                      <p>{post.body}</p>
-                      <footer className="tags">{post.tags.map(tag => <span>{tag + " "} </span>)}</footer>
-                    </article>
-                  </li>)
+                .map(post => <Col>
+                  <Card style={{ width: '20rem' }} className='card'>
+                  <Card.Body>
+                      <Card.Title>{post.title}</Card.Title>
+                      <Card.Text>{post.body}</Card.Text>
+                      {post.tags.map(tag =><Badge bg="secondary">{tag}</Badge>)}
+                      </Card.Body></Card>
+                  </Col>)
               }
-          </ul>
-        </section>
+          </Row></Accordion.Body></Accordion.Item>
+        </section></Container>
+        </Accordion>
       </>
     );
 }
