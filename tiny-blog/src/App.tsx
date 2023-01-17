@@ -19,6 +19,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1 className='heading'>Keep scribbling!</h1>
       <Header></Header>
       <BlogPosts postData={postData}></BlogPosts>
     </div>

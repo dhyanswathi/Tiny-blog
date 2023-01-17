@@ -9,7 +9,7 @@ function BlogPosts({postData} : IPostComponentProps) {
 
     return (
       <>
-        <h1>Hey there! Here is our posts!</h1>
+        
         <section className='posts-section'>
           <h2>Love</h2>
           <ul className="posts-love">
