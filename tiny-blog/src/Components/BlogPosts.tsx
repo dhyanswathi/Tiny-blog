@@ -31,7 +31,7 @@ function BlogPosts({postData} : IPostComponentProps) {
                       <Card.Header style={{ backgroundColor: 'rgb(35, 1, 4)', color: 'rgb(250, 251, 241)' }}>{post.title}</Card.Header>
                       <Card.Text>{post.body}</Card.Text>
                     </Card.Body>
-                      <footer className="card-footer">Tags: {post.tags.map(tag =><Badge bg="dark">{tag}</Badge>)}</footer>
+                      <Card.Footer>Tags: {post.tags.map(tag =><Badge bg="dark">{tag}</Badge>)}</Card.Footer>
                   </Card>
                 </Col>)
               }
@@ -52,7 +52,7 @@ function BlogPosts({postData} : IPostComponentProps) {
                       <Card.Header style={{ backgroundColor: 'rgb(35, 1, 4)', color: 'rgb(250, 251, 241)' }}>{post.title}</Card.Header>
                       <Card.Text>{post.body}</Card.Text>
                     </Card.Body>
-                      <footer className="card-footer">Tags: {post.tags.map(tag =><Badge bg="dark">{tag}</Badge>)}</footer>
+                      <Card.Footer>Tags: {post.tags.map(tag =><Badge bg="dark">{tag}</Badge>)}</Card.Footer>
                   </Card>
                   </Col>)
               }
@@ -73,7 +73,7 @@ function BlogPosts({postData} : IPostComponentProps) {
                       <Card.Header style={{ backgroundColor: 'rgb(35, 1, 4)', color: 'rgb(250, 251, 241)' }}>{post.title}</Card.Header>
                       <Card.Text>{post.body}</Card.Text>
                     </Card.Body>
-                      <footer className="card-footer">Tags: {post.tags.map(tag =><Badge bg="dark">{tag}</Badge>)}</footer> 
+                      <Card.Footer>Tags: {post.tags.map(tag =><Badge bg="dark">{tag}</Badge>)}</Card.Footer> 
                   </Card>
                   </Col>)
               }
@@ -94,7 +94,7 @@ function BlogPosts({postData} : IPostComponentProps) {
                       <Card.Header style={{ backgroundColor: 'rgb(35, 1, 4)', color: 'rgb(250, 251, 241)' }}>{post.title}</Card.Header>
                       <Card.Text>{post.body}</Card.Text>
                     </Card.Body>
-                      <footer className="card-footer">Tags: {post.tags.map(tag =><Badge bg="dark">{tag}</Badge>)}</footer>
+                      <Card.Footer>Tags: {post.tags.map(tag =><Badge bg="dark">{tag}</Badge>)}</Card.Footer>
                   </Card>
                   </Col>)
               }
@@ -115,7 +115,7 @@ function BlogPosts({postData} : IPostComponentProps) {
                       <Card.Header style={{ backgroundColor: 'rgb(35, 1, 4)', color: 'rgb(250, 251, 241)' }}>{post.title}</Card.Header>
                       <Card.Text>{post.body}</Card.Text>
                     </Card.Body>
-                      <footer className="card-footer">Tags: {post.tags.map(tag =><Badge bg="dark">{tag}</Badge>)}</footer>
+                      <Card.Footer>Tags: {post.tags.map(tag =><Badge bg="dark">{tag}</Badge>)}</Card.Footer>
                   </Card>
                   </Col>)
               }
