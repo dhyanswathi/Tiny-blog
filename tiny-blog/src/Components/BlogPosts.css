@@ -1,14 +1,15 @@
 .posts-section {
-    border: 1px solid black;
-    margin: 10px;
+    border: 3px double rgba(0, 0, 0, 0.404);
+    
+    margin: 20px;
 }
 
-.posts {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.card {
+    margin-bottom: 20px;
+    box-shadow: 2px;
+    background-color: rgb(239, 243, 210);
 }
 
-.posts-article {
-    border: 1px solid black;
+.card-footer {
+    align-items: flex-end;
 }

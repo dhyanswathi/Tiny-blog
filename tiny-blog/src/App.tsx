@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import BlogPosts from './Components/BlogPosts';
 import Header from './Components/Header';
+import Welcome from './Components/Welcome';
 import { PostInfo } from './types';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
+      <Welcome></Welcome>
       <BlogPosts postData={postData}></BlogPosts>
     </div>
   );
