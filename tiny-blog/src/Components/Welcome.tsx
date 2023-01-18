@@ -9,7 +9,7 @@ function Welcome() {
         <Carousel.Item>
             <img
               className="image"
-              src="https://img.freepik.com/free-photo/workplace-with-smartphone-laptop-black-table-top-view-copyspace-background_144627-24860.jpg"
+              src="https://a6e8z9v6.stackpathcdn.com/simplearticle/wp-content/uploads/2013/12/11740750174_fba22d99f3_o1-1140x480.jpg"
               alt="Second slide"
             />
             <Carousel.Caption>
@@ -21,7 +21,7 @@ function Welcome() {
         <Carousel.Item>
             <img
               className="image"
-              src="https://img.freepik.com/free-photo/workplace-with-smartphone-laptop-black-table-top-view-copyspace-background_144627-24860.jpg"
+              src="https://a6e8z9v6.stackpathcdn.com/simplearticle/wp-content/uploads/2013/12/9514752555_0374b08302_o1-1140x480.jpg"
               alt="Third slide"
             />
              <Carousel.Caption>
@@ -33,7 +33,7 @@ function Welcome() {
           <Carousel.Item>
             <img
               className="image"
-              src="https://img.freepik.com/free-photo/workplace-with-smartphone-laptop-black-table-top-view-copyspace-background_144627-24860.jpg"
+              src="https://a6e8z9v6.stackpathcdn.com/simplearticle/wp-content/uploads/2013/12/13412804195_74cd6a1e60_o1-1140x480.jpg"
               alt="First slide"
             />
             <Carousel.Caption>

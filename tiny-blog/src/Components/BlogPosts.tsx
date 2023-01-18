@@ -16,11 +16,11 @@ function BlogPosts({postData} : IPostComponentProps) {
 
     return (
       <><Accordion>
-        <h1>Our top categories...</h1>
+        <h1 className="category">Our top categories</h1>
         <Container>
         <section className='posts-section'>
         <Accordion.Item eventKey="0">
-        <Accordion.Header><h2>Love</h2></Accordion.Header>
+        <Accordion.Header><h3>Love</h3></Accordion.Header>
         <Accordion.Body>
           <Row>
               {
@@ -28,10 +28,10 @@ function BlogPosts({postData} : IPostComponentProps) {
                 .map(post => <Col>
                   <Card style={{ width: '20rem', minHeight: '27rem', backgroundColor:  'rgb(250, 251, 241)' }} className='card'>
                     <Card.Body>
-                      <Card.Header style={{ backgroundColor: 'rgb(35, 1, 4)', color: 'rgb(250, 251, 241)' }}>{post.title}</Card.Header>
+                      <Card.Header style={{ backgroundColor: '#474242', color: 'rgb(250, 251, 241)' }}>{post.title}</Card.Header>
                       <Card.Text>{post.body}</Card.Text>
                     </Card.Body>
-                      <Card.Footer>Tags: {post.tags.map(tag =><Badge bg="dark">{tag}</Badge>)}</Card.Footer>
+                      <Card.Footer>Tags: {post.tags.map(tag =><Badge bg="secondary">{tag}</Badge>)}</Card.Footer>
                   </Card>
                 </Col>)
               }
@@ -41,7 +41,7 @@ function BlogPosts({postData} : IPostComponentProps) {
         <Container>
         <section className='posts-section'>
         <Accordion.Item eventKey="1">
-        <Accordion.Header><h2>Mystery</h2></Accordion.Header>
+        <Accordion.Header><h3>Mystery</h3></Accordion.Header>
         <Accordion.Body>
           <Row>
               {
@@ -49,10 +49,10 @@ function BlogPosts({postData} : IPostComponentProps) {
                 .map(post => <Col>
                   <Card style={{ width: '20rem', minHeight: '27rem', backgroundColor:  'rgb(250, 251, 241)' }} className='card'>
                   <Card.Body>
-                      <Card.Header style={{ backgroundColor: 'rgb(35, 1, 4)', color: 'rgb(250, 251, 241)' }}>{post.title}</Card.Header>
+                      <Card.Header style={{ backgroundColor: '#474242', color: 'rgb(250, 251, 241)' }}>{post.title}</Card.Header>
                       <Card.Text>{post.body}</Card.Text>
                     </Card.Body>
-                      <Card.Footer>Tags: {post.tags.map(tag =><Badge bg="dark">{tag}</Badge>)}</Card.Footer>
+                      <Card.Footer>Tags: {post.tags.map(tag =><Badge bg="secondary">{tag}</Badge>)}</Card.Footer>
                   </Card>
                   </Col>)
               }
@@ -62,7 +62,7 @@ function BlogPosts({postData} : IPostComponentProps) {
         <Container>
         <section className='posts-section'>
         <Accordion.Item eventKey="2">
-        <Accordion.Header><h2>Fiction</h2></Accordion.Header>
+        <Accordion.Header><h3>Fiction</h3></Accordion.Header>
         <Accordion.Body>
           <Row>
               {
@@ -70,10 +70,10 @@ function BlogPosts({postData} : IPostComponentProps) {
                 .map(post => <Col>
                   <Card style={{ width: '20rem', minHeight: '27rem', backgroundColor:  'rgb(250, 251, 241)' }} className='card'>
                    <Card.Body>
-                      <Card.Header style={{ backgroundColor: 'rgb(35, 1, 4)', color: 'rgb(250, 251, 241)' }}>{post.title}</Card.Header>
+                      <Card.Header style={{ backgroundColor: '#474242', color: 'rgb(250, 251, 241)' }}>{post.title}</Card.Header>
                       <Card.Text>{post.body}</Card.Text>
                     </Card.Body>
-                      <Card.Footer>Tags: {post.tags.map(tag =><Badge bg="dark">{tag}</Badge>)}</Card.Footer> 
+                      <Card.Footer>Tags: {post.tags.map(tag =><Badge bg="secondary">{tag}</Badge>)}</Card.Footer> 
                   </Card>
                   </Col>)
               }
@@ -83,7 +83,7 @@ function BlogPosts({postData} : IPostComponentProps) {
         <Container>
         <section className='posts-section'>
         <Accordion.Item eventKey="3">
-        <Accordion.Header><h2>Classic</h2></Accordion.Header>
+        <Accordion.Header><h3>Classic</h3></Accordion.Header>
         <Accordion.Body>
           <Row>
               {
@@ -91,10 +91,10 @@ function BlogPosts({postData} : IPostComponentProps) {
                 .map(post => <Col>
                   <Card style={{ width: '20rem', minHeight: '27rem', backgroundColor:  'rgb(250, 251, 241)' }} className='card'>
                   <Card.Body>
-                      <Card.Header style={{ backgroundColor: 'rgb(35, 1, 4)', color: 'rgb(250, 251, 241)' }}>{post.title}</Card.Header>
+                      <Card.Header style={{ backgroundColor: '#474242', color: 'rgb(250, 251, 241)' }}>{post.title}</Card.Header>
                       <Card.Text>{post.body}</Card.Text>
                     </Card.Body>
-                      <Card.Footer>Tags: {post.tags.map(tag =><Badge bg="dark">{tag}</Badge>)}</Card.Footer>
+                      <Card.Footer>Tags: {post.tags.map(tag =><Badge bg="secondary">{tag}</Badge>)}</Card.Footer>
                   </Card>
                   </Col>)
               }
@@ -104,7 +104,7 @@ function BlogPosts({postData} : IPostComponentProps) {
         <Container>
         <section className='posts-section'>
         <Accordion.Item eventKey="4">
-        <Accordion.Header><h2>History</h2></Accordion.Header>
+        <Accordion.Header><h3>History</h3></Accordion.Header>
         <Accordion.Body>
           <Row>
               {
@@ -112,10 +112,10 @@ function BlogPosts({postData} : IPostComponentProps) {
                 .map(post => <Col>
                   <Card style={{ width: '20rem', minHeight: '27rem', backgroundColor:  'rgb(250, 251, 241)' }} className='card'>
                   <Card.Body>
-                      <Card.Header style={{ backgroundColor: 'rgb(35, 1, 4)', color: 'rgb(250, 251, 241)' }}>{post.title}</Card.Header>
+                      <Card.Header style={{ backgroundColor: '#474242', color: 'rgb(250, 251, 241)' }}>{post.title}</Card.Header>
                       <Card.Text>{post.body}</Card.Text>
                     </Card.Body>
-                      <Card.Footer>Tags: {post.tags.map(tag =><Badge bg="dark">{tag}</Badge>)}</Card.Footer>
+                      <Card.Footer>Tags: {post.tags.map(tag =><Badge bg="secondary">{tag}</Badge>)}</Card.Footer>
                   </Card>
                   </Col>)
               }

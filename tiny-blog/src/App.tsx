@@ -18,8 +18,10 @@ function App() {
     getData();
 }, []);
 
+  const imgUrl = "https://www.toptal.com/designers/subtlepatterns/uploads/double-bubble-outline.png";
+
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundImage: `url(${imgUrl})` }}>
       <Header></Header>
       <Welcome></Welcome>
       <BlogPosts postData={postData}></BlogPosts>

@@ -1,10 +1,28 @@
 .posts-section {
     border: 3px double rgba(0, 0, 0, 0.404);
     
-    margin: 20px;
+    margin: 20px 0px;
+}
+
+.posts-section h3 {
+    color: #bdbaba;
+}
+
+.category {
+    text-align: left;
+    margin-left: 60px;
+    color: #646060;
+    color: #474242;
 }
 
 .card {
     margin-bottom: 20px;
 }
 
+.container {
+    max-width: 1158px !important;
+}
+
+.card-footer {
+    color: #474242;
+}

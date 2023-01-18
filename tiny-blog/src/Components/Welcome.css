@@ -4,6 +4,6 @@
 }
 
 .image {
-    min-width: 100%;
+    max-width: 90%;
     height: 500px;
 }
