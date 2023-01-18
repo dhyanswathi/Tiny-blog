@@ -25,4 +25,5 @@
 
 .card-footer {
     color: #474242;
+    display: flex;
 }
