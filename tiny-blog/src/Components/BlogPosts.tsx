@@ -24,7 +24,7 @@ function BlogPosts({postData} : IPostComponentProps) {
         <Accordion.Body>
           <Row>
               {
-                postData.filter(post => post.tags.includes("love")).slice(0, 5)
+                postData.filter(post => post.tags.includes("love")).slice(0, 6)
                 .map(post => <Col>
                   <Card style={{ width: '20rem', minHeight: '27rem', backgroundColor:  'rgb(250, 251, 241)' }} className='card'>
                     <Card.Body>
@@ -45,7 +45,7 @@ function BlogPosts({postData} : IPostComponentProps) {
         <Accordion.Body>
           <Row>
               {
-                postData.filter(post => post.tags.includes("mystery")).slice(0, 5)
+                postData.filter(post => post.tags.includes("mystery")).slice(0, 6)
                 .map(post => <Col>
                   <Card style={{ width: '20rem', minHeight: '27rem', backgroundColor:  'rgb(250, 251, 241)' }} className='card'>
                   <Card.Body>
@@ -66,7 +66,7 @@ function BlogPosts({postData} : IPostComponentProps) {
         <Accordion.Body>
           <Row>
               {
-                postData.filter(post => post.tags.includes("fiction")).slice(0, 5)
+                postData.filter(post => post.tags.includes("fiction")).slice(0, 6)
                 .map(post => <Col>
                   <Card style={{ width: '20rem', minHeight: '27rem', backgroundColor:  'rgb(250, 251, 241)' }} className='card'>
                    <Card.Body>
@@ -87,7 +87,7 @@ function BlogPosts({postData} : IPostComponentProps) {
         <Accordion.Body>
           <Row>
               {
-                postData.filter(post => post.tags.includes("classic")).slice(0, 5)
+                postData.filter(post => post.tags.includes("classic")).slice(0, 6)
                 .map(post => <Col>
                   <Card style={{ width: '20rem', minHeight: '27rem', backgroundColor:  'rgb(250, 251, 241)' }} className='card'>
                   <Card.Body>
@@ -108,7 +108,7 @@ function BlogPosts({postData} : IPostComponentProps) {
         <Accordion.Body>
           <Row>
               {
-                postData.filter(post => post.tags.includes("history")).slice(0, 5)
+                postData.filter(post => post.tags.includes("history")).slice(0, 6)
                 .map(post => <Col>
                   <Card style={{ width: '20rem', minHeight: '27rem', backgroundColor:  'rgb(250, 251, 241)' }} className='card'>
                   <Card.Body>
