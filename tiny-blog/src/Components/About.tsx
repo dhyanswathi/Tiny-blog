@@ -10,7 +10,6 @@ function About() {
     return (
         <> <Header></Header>
             <section style={{ backgroundImage: `url(${imgUrl})` }} className="about">
-            
                 <h3>Developer Info</h3>
                 <article>
                     <p>Swathi Sidharthan</p>
@@ -18,8 +17,7 @@ function About() {
                     <p> Connect to me @ <a href="http://www.linkedin.com/in/swathi-sidharthan">
                         <Button variant="outline-primary" size="sm">LinkedIn</Button>
                         </a></p>
-                </article>
-                        
+                </article>             
             </section></>
     )
 }

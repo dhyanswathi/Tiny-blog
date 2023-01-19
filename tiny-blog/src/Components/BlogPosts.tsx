@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import Badge from 'react-bootstrap/Badge';
+import Button from 'react-bootstrap/Button';
 import Accordion from 'react-bootstrap/Accordion';
 import './BlogPosts.css';
 
@@ -31,7 +31,7 @@ function BlogPosts({postData} : IPostComponentProps) {
                       <Card.Header style={{ backgroundColor: '#474242', color: 'rgb(250, 251, 241)' }}>{post.title}</Card.Header>
                       <Card.Text>{post.body}</Card.Text>
                     </Card.Body>
-                      <Card.Footer>Tags: {post.tags.map(tag =><Badge bg="secondary">{tag}</Badge>)}</Card.Footer>
+                      <Card.Footer>Tags: {post.tags.map(tag =><Button variant="outline-secondary" size="sm">{tag}</Button>)}</Card.Footer>
                   </Card>
                 </Col>)
               }
@@ -52,7 +52,7 @@ function BlogPosts({postData} : IPostComponentProps) {
                       <Card.Header style={{ backgroundColor: '#474242', color: 'rgb(250, 251, 241)' }}>{post.title}</Card.Header>
                       <Card.Text>{post.body}</Card.Text>
                     </Card.Body>
-                      <Card.Footer>Tags: {post.tags.map(tag =><Badge bg="secondary">{tag}</Badge>)}</Card.Footer>
+                      <Card.Footer>Tags: {post.tags.map(tag =><Button variant="outline-secondary" size="sm">{tag}</Button>)}</Card.Footer>
                   </Card>
                   </Col>)
               }
@@ -73,7 +73,7 @@ function BlogPosts({postData} : IPostComponentProps) {
                       <Card.Header style={{ backgroundColor: '#474242', color: 'rgb(250, 251, 241)' }}>{post.title}</Card.Header>
                       <Card.Text>{post.body}</Card.Text>
                     </Card.Body>
-                      <Card.Footer>Tags: {post.tags.map(tag =><Badge bg="secondary">{tag}</Badge>)}</Card.Footer> 
+                      <Card.Footer>Tags: {post.tags.map(tag =><Button variant="outline-secondary" size="sm">{tag}</Button>)}</Card.Footer> 
                   </Card>
                   </Col>)
               }
@@ -94,7 +94,7 @@ function BlogPosts({postData} : IPostComponentProps) {
                       <Card.Header style={{ backgroundColor: '#474242', color: 'rgb(250, 251, 241)' }}>{post.title}</Card.Header>
                       <Card.Text>{post.body}</Card.Text>
                     </Card.Body>
-                      <Card.Footer>Tags: {post.tags.map(tag =><Badge bg="secondary">{tag}</Badge>)}</Card.Footer>
+                      <Card.Footer>Tags: {post.tags.map(tag =><Button variant="outline-secondary" size="sm">{tag}</Button>)}</Card.Footer>
                   </Card>
                   </Col>)
               }
@@ -115,7 +115,7 @@ function BlogPosts({postData} : IPostComponentProps) {
                       <Card.Header style={{ backgroundColor: '#474242', color: 'rgb(250, 251, 241)' }}>{post.title}</Card.Header>
                       <Card.Text>{post.body}</Card.Text>
                     </Card.Body>
-                      <Card.Footer>Tags: {post.tags.map(tag =><Badge bg="secondary">{tag}</Badge>)}</Card.Footer>
+                      <Card.Footer>Tags: {post.tags.map(tag =><Button variant="outline-secondary" size="sm">{tag}</Button>)}</Card.Footer>
                   </Card>
                   </Col>)
               }
