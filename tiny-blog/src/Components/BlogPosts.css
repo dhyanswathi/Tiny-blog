@@ -1,7 +1,7 @@
 .posts-section {
-    border: 3px double rgba(0, 0, 0, 0.404);
+    border: 0.188 double rgba(0, 0, 0, 0.404);
     
-    margin: 20px 0px;
+    margin: 1.25rem 0rem;
 }
 
 .posts-section h3 {
@@ -10,17 +10,16 @@
 
 .category {
     text-align: left;
-    margin-left: 60px;
+    margin-left: 3.75rem;
     color: #646060;
-    color: #474242;
 }
 
 .card {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .container {
-    max-width: 1158px !important;
+    max-width: 72.5 !important;
 }
 
 .card-footer {
