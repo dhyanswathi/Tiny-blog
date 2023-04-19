@@ -18,7 +18,6 @@
     margin-bottom: 1.25rem;
 }
 
-
 .container {
     max-width: 72.5rem !important;
 }
@@ -27,8 +26,3 @@
     color: #474242;
     display: flex;
 }
-
-.tag {
-    margin: auto 2px;
-}
-

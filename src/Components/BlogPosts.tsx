@@ -20,18 +20,18 @@ function BlogPosts({postData} : IPostComponentProps) {
         <Container>
         <section className='posts-section'>
         <Accordion.Item eventKey="0">
-        <Accordion.Header className="select"><h3>Love</h3></Accordion.Header>
+        <Accordion.Header><h3>Love</h3></Accordion.Header>
         <Accordion.Body>
           <Row>
               {
                 postData.filter(post => post.tags.includes("love")).slice(0, 6)
                 .map(post => <Col>
-                  <Card style={{ width: '20rem', minHeight: '27rem' }} className='card'>
+                  <Card style={{ width: '20rem', minHeight: '27rem', backgroundColor:  'rgb(250, 251, 241)' }} className='card'>
                     <Card.Body>
                       <Card.Header style={{ backgroundColor: '#474242', color: 'rgb(250, 251, 241)' }}>{post.title}</Card.Header>
                       <Card.Text>{post.body}</Card.Text>
                     </Card.Body>
-                      <Card.Footer>{post.tags.map(tag =><Button className="tag" variant="outline-secondary" size="sm">{tag}</Button>)}</Card.Footer>
+                      <Card.Footer>Tags: {post.tags.map(tag =><Button variant="outline-secondary" size="sm">{tag}</Button>)}</Card.Footer>
                   </Card>
                 </Col>)
               }
@@ -47,12 +47,12 @@ function BlogPosts({postData} : IPostComponentProps) {
               {
                 postData.filter(post => post.tags.includes("mystery")).slice(0, 6)
                 .map(post => <Col>
-                  <Card style={{ width: '20rem', minHeight: '27rem'}} className='card'>
+                  <Card style={{ width: '20rem', minHeight: '27rem', backgroundColor:  'rgb(250, 251, 241)' }} className='card'>
                   <Card.Body>
                       <Card.Header style={{ backgroundColor: '#474242', color: 'rgb(250, 251, 241)' }}>{post.title}</Card.Header>
                       <Card.Text>{post.body}</Card.Text>
                     </Card.Body>
-                      <Card.Footer>{post.tags.map(tag =><Button className="tag" variant="outline-secondary" size="sm">{tag}</Button>)}</Card.Footer>
+                      <Card.Footer>Tags: {post.tags.map(tag =><Button variant="outline-secondary" size="sm">{tag}</Button>)}</Card.Footer>
                   </Card>
                   </Col>)
               }
@@ -68,12 +68,12 @@ function BlogPosts({postData} : IPostComponentProps) {
               {
                 postData.filter(post => post.tags.includes("fiction")).slice(0, 6)
                 .map(post => <Col>
-                  <Card style={{ width: '20rem', minHeight: '27rem'}} className='card'>
+                  <Card style={{ width: '20rem', minHeight: '27rem', backgroundColor:  'rgb(250, 251, 241)' }} className='card'>
                    <Card.Body>
                       <Card.Header style={{ backgroundColor: '#474242', color: 'rgb(250, 251, 241)' }}>{post.title}</Card.Header>
                       <Card.Text>{post.body}</Card.Text>
                     </Card.Body>
-                      <Card.Footer> {post.tags.map(tag =><Button className="tag" variant="outline-secondary" size="sm">{tag}</Button>)}</Card.Footer> 
+                      <Card.Footer>Tags: {post.tags.map(tag =><Button variant="outline-secondary" size="sm">{tag}</Button>)}</Card.Footer> 
                   </Card>
                   </Col>)
               }
@@ -89,12 +89,12 @@ function BlogPosts({postData} : IPostComponentProps) {
               {
                 postData.filter(post => post.tags.includes("classic")).slice(0, 6)
                 .map(post => <Col>
-                  <Card style={{ width: '20rem', minHeight: '27rem'}} className='card'>
+                  <Card style={{ width: '20rem', minHeight: '27rem', backgroundColor:  'rgb(250, 251, 241)' }} className='card'>
                   <Card.Body>
                       <Card.Header style={{ backgroundColor: '#474242', color: 'rgb(250, 251, 241)' }}>{post.title}</Card.Header>
                       <Card.Text>{post.body}</Card.Text>
                     </Card.Body>
-                      <Card.Footer>{post.tags.map(tag =><Button className="tag" variant="outline-secondary" size="sm">{tag}</Button>)}</Card.Footer>
+                      <Card.Footer>Tags: {post.tags.map(tag =><Button variant="outline-secondary" size="sm">{tag}</Button>)}</Card.Footer>
                   </Card>
                   </Col>)
               }
@@ -110,12 +110,12 @@ function BlogPosts({postData} : IPostComponentProps) {
               {
                 postData.filter(post => post.tags.includes("history")).slice(0, 6)
                 .map(post => <Col>
-                  <Card style={{ width: '20rem', minHeight: '27rem'}} className='card'>
+                  <Card style={{ width: '20rem', minHeight: '27rem', backgroundColor:  'rgb(250, 251, 241)' }} className='card'>
                   <Card.Body>
                       <Card.Header style={{ backgroundColor: '#474242', color: 'rgb(250, 251, 241)' }}>{post.title}</Card.Header>
                       <Card.Text>{post.body}</Card.Text>
                     </Card.Body>
-                      <Card.Footer> {post.tags.map(tag =><Button className="tag" variant="outline-secondary" size="sm">{tag}</Button>)}</Card.Footer>
+                      <Card.Footer>Tags: {post.tags.map(tag =><Button variant="outline-secondary" size="sm">{tag}</Button>)}</Card.Footer>
                   </Card>
                   </Col>)
               }
