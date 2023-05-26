@@ -1,7 +1,12 @@
 # Tiny-blog
+A blog that connects to this https://dummyjson.com/posts and shows different sections according to category
 
-## Purpose
-You are going to create a blog that connects to this https://dummyjson.com/posts (remember to work with mock data locally here also. Please don’t hammer this API too much while developing). Your blog only shows different posts. But the important thing is that you need to have sections for the different posts. 
+## Tech-stack
+* TypeScript
+* React
+* Bootstrap
+* CSS
+* Netlify
 
 ## Requirements
 - Display the posts as a list of cards. With a clear paragraph body and title for each card. 
